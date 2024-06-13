@@ -1,0 +1,105 @@
+:root {
+    --sky: #ddeaf3;
+    --horizon: #B3E5FC;
+    --ocean: #03A9F4;
+    --twlight: #01579B;
+    --night: #263238;
+    --sand: #EFEBE9;
+    --stone: #455A64;
+    --grey: #838383;
+    --disaster: #ff0000; /* This will provide you a bold red color */
+    --nonDisaster: #008000; /* This is a comfortable green color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sky);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--twlight);
+}
+
+.main-container {
+    padding: 2vw;
+    height: 70vh;
+    width: 60vw;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px var(--stone);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sand);
+}
+
+.main-heading {
+    padding-bottom: 20px;
+    font-size: 2rem;
+    color: var(--grey);
+}
+
+textarea {
+    width: 80%;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    border: 0.1vw solid var(--stone);
+    resize: none;
+    height: 60%;
+    font-size: 2rem;
+}
+
+button {
+    background-color: var(--ocean);
+    color: var(--sand);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--twlight);
+}
+
+p {
+    background-color: var(--stone);
+    color: var(--sand);
+}
+
+button, p {
+    width: 40%;
+    padding: 0.5em 1em;
+    border-radius: 0.5vw;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1rem var(--stone);
+}
+
+.main-container > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    width: 80%;
+    align-items: center;
+}
+
+#result.disaster {
+    background-color: var(--disaster);
+}
+
+#result.nonDisaster {
+    background-color: var(--nonDisaster);
+}

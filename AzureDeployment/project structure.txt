@@ -1,0 +1,17 @@
+/your_project
+├── app.py
+├── requirements.txt
+├── tokenizer.pkl
+├── disaster_tweet_lstm_model.h5
+├── templates
+│   └── index.html
+├── static
+│   ├── css
+│   │   └── reset.css
+│   │   └── screen.css
+│   ├── js
+│   │   └── script.js
+│   └── swagger.json
+└── .github
+    └── workflows
+        └── azure_deploy.yml
